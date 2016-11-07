@@ -1,0 +1,21 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.SkeletonBasics.Joint_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Microsoft.Samples.Kinect.SkeletonBasics"
+        mc:Ignorable="d"
+        Title="SkeletonBasics" Height="670.288" Width="636.058">
+    <Canvas>
+        <Image DockPanel.Dock="Left" Source="Images\Logo.png" Stretch="Fill" Height="32" Width="81" Canvas.Left="10" Canvas.Top="10"/>
+        <Image x:Name="streamingVideoImage" Canvas.Left="478" Canvas.Top="230" Width="120" Height="120"/>
+        <Image Grid.Column="1" Source="Images\Status.png" Stretch="None" HorizontalAlignment="Center" Canvas.Left="234" Canvas.Top="4"/>
+        <TextBox x:Name ="msg" Text="Output:" Canvas.Left="478" Canvas.Top="20" Width="120" Height="25" Background="White"    />
+        <TextBox x:Name ="write_win" Text="Input: " Canvas.Left="478" Canvas.Top="59" Width="120" Height="25" Background="White" />
+        <Button x:Name="okbutton" Canvas.Left="478" Canvas.Top="102"
+         Width="120" Height="24" Content=" Ok" Click="okbutton_Click"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Width="Auto" Margin="520,41,48,73"/>
+        <TextBox x:Name="textbox1" Canvas.Top="51" Canvas.Left="60" Width="372" Height="350" />
+        <Button x:Name="Viewbutton" Height="24" Width="120" Content="Stats" Click="Viewbutton_Click" Canvas.Left="478" Canvas.Top="144"/>
+    </Canvas>
+</Window>
